@@ -1,5 +1,6 @@
 import requests
 import time
+import calls
 
 url = "https://pctips.ca/api/v1/s47B3i4t0oNlwFl67D5u/telemetry"
 headers = {'Content-Type': 'application/json'}
@@ -34,5 +35,5 @@ while True:
     else:
         print("Failed to send data")
 
-    # Wait for 1 second before sending the next data
-    time.sleep(1)
+    # Wait for some time in seconds before sending the next data
+    time.sleep(0.1)
