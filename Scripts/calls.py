@@ -1,4 +1,4 @@
- import os
+import os
 import psutil
 from gpiozero import CPUTemperature
 from sense_hat import SenseHat
