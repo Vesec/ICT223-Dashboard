@@ -1,6 +1,7 @@
 import os
 from sense_hat import SenseHat
 
+sense = SenseHat
 
 def get_cpu_temperature():
     #Return the CPU temperature as a string in Celsius.
