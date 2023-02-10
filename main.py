@@ -2,10 +2,7 @@ import json
 import requests
 import time
 import os
-
-# Import based on using a physical RPi or the emulator
-#from sense_emu import SenseHat
-from sense_hat import SenseHat
+import calls
 
 # Constants
 INTERVAL            = 3  #Data capture and upload interval in seconds.
@@ -14,20 +11,38 @@ THINGSBOARD_HOST    = "10.0.0.95:8080"  #Thingsboard server address and port.
 
 thingsboard_url     = "http://{0}/api/v1/{1}/telemetry".format(THINGSBOARD_HOST, API_KEY)
 
-sense = SenseHat()
+
 data = {}
 next_reading = time.time()
 
 try:
     while True:
         data = {}
-        data['temperature'] = sense.get_temperature()
-        data['pressure'] = sense.get_pressure()
-        data['humidity'] = sense.get_humidity()
-        data['cpu_temp'] = data.getCPUtemperature()
-        data['cpu_use'] = data.getCPUuse()
-        data['ram_total'], data['ram_used'], data['ram_free'] = data.getRAMinfo()
-        data['disk_total'], data['disk_used'], data['disk_free'], data['disk_used_percentage'] = data.getDiskSpace()
+        data['temperature'] = calls.get_temperature()
+        data['pressure'] = calls.get_pressure()
+        data['humidity'] = calls.get_humidity()
+        data['cpu_temp'] = calls.getCPUtemperature()
+        data['cpu_use'] = calls.getCPUuse()
+        data['ram_total'] = calls.getRAMinfo()[0]
+        data['ram_used'] = calls.getRAMinfo()[1]
+        data['ram_free'] = calls.getRAMinfo()[2]
+        data['disk_total'] = calls.getDiskSpace()[0]
+        data['disk_used'] = calls.getDiskSpace()[1]
+        data['disk_free'] = calls.getDiskSpace()[2]
+        data['disk_used_percentage'] = calls.getDiskSpace()[3]
+        data['acceleration_x'] = calls.get_accelerometer()[0]
+        data['acceleration_y'] = calls.get_accelerometer()[1]
+        data['acceleration_z'] = calls.get_accelerometer()[2]
+        data['orientation_x'] = calls.get_gyroscope()[0]
+        data['orientation_y'] = calls.get_gyroscope()[1]
+        data['orientation_z'] = calls.get_gyroscope()[2]
+        data['pitch'] = calls.get_orientation_radians()[0]
+        data['roll'] = calls.get_orientation_radians()[1]
+        data['yaw'] = calls.get_orientation_radians()[2]
+        data['pitch'] = calls.get_orientation_degrees()[0]
+        data['roll'] = calls.get_orientation_degrees()[1]
+        data['yaw'] = calls.get_orientation_degrees()[2]
+
 
         #Sending data to Thingsboard
         r = requests.post(thingsboard_url, data=json.dumps(data))
@@ -36,5 +51,6 @@ try:
         sleep_time = next_reading-time.time()
         if sleep_time > 0:
             time.sleep(sleep_time)
+
 except KeyboardInterrupt:
     pass
