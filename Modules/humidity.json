@@ -1,0 +1,128 @@
+{
+  "widget": {
+    "isSystemType": true,
+    "bundleAlias": "cards",
+    "typeAlias": "simple_card",
+    "type": "latest",
+    "title": "New widget",
+    "image": null,
+    "description": null,
+    "sizeX": 5,
+    "sizeY": 3,
+    "config": {
+      "datasources": [
+        {
+          "type": "entity",
+          "name": null,
+          "entityAliasId": "804761e2-f0f5-ad90-7128-a8c8aec0230d",
+          "filterId": null,
+          "dataKeys": [
+            {
+              "name": "humidity",
+              "type": "timeseries",
+              "label": "(g.m-3)",
+              "color": "#2196f3",
+              "settings": {},
+              "_hash": 0.6618468029017516,
+              "aggregationType": "NONE",
+              "units": null,
+              "decimals": 1,
+              "funcBody": null,
+              "usePostProcessing": null,
+              "postFuncBody": null
+            }
+          ]
+        }
+      ],
+      "timewindow": {
+        "displayValue": "",
+        "selectedTab": 0,
+        "realtime": {
+          "realtimeType": 1,
+          "interval": 1000,
+          "timewindowMs": 60000,
+          "quickInterval": "CURRENT_DAY"
+        },
+        "history": {
+          "historyType": 0,
+          "interval": 1000,
+          "timewindowMs": 60000,
+          "fixedTimewindow": {
+            "startTimeMs": 1675972034026,
+            "endTimeMs": 1676058434026
+          },
+          "quickInterval": "CURRENT_DAY"
+        },
+        "aggregation": {
+          "type": "AVG",
+          "limit": 25000
+        }
+      },
+      "showTitle": true,
+      "backgroundColor": "#e8e8e8",
+      "color": "#000000",
+      "padding": "16px",
+      "settings": {
+        "labelPosition": "top"
+      },
+      "title": "Humidity",
+      "dropShadow": true,
+      "enableFullscreen": true,
+      "titleStyle": {
+        "fontSize": "18px",
+        "fontWeight": 400
+      },
+      "units": "",
+      "decimals": 1,
+      "useDashboardTimewindow": true,
+      "showLegend": false,
+      "widgetStyle": {},
+      "actions": {},
+      "widgetCss": "",
+      "pageSize": 1024,
+      "noDataDisplayMessage": "",
+      "showTitleIcon": false,
+      "titleTooltip": "",
+      "titleIcon": "",
+      "iconColor": "rgba(0, 0, 0, 0.87)",
+      "iconSize": "24px",
+      "legendConfig": {
+        "direction": "column",
+        "position": "bottom",
+        "sortDataKeys": false,
+        "showMin": false,
+        "showMax": false,
+        "showAvg": false,
+        "showTotal": false,
+        "showLatest": false
+      }
+    },
+    "row": 0,
+    "col": 0,
+    "id": "74cd3f9c-a966-f8b9-8d78-5565d37f7fd2"
+  },
+  "aliasesInfo": {
+    "datasourceAliases": {
+      "0": {
+        "alias": "RPi 4B",
+        "filter": {
+          "type": "singleEntity",
+          "singleEntity": {
+            "entityType": "DEVICE",
+            "id": "0169acb0-a8f5-11ed-ac5f-85a9c8d4abd3"
+          },
+          "resolveMultiple": false
+        }
+      }
+    },
+    "targetDeviceAliases": {}
+  },
+  "filtersInfo": {
+    "datasourceFilters": {}
+  },
+  "originalSize": {
+    "sizeX": 5,
+    "sizeY": 3
+  },
+  "originalColumns": 24
+}

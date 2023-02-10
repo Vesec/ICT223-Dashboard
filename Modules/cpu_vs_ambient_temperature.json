@@ -1,0 +1,146 @@
+{
+  "widget": {
+    "isSystemType": true,
+    "bundleAlias": "charts",
+    "typeAlias": "basic_timeseries",
+    "type": "timeseries",
+    "title": "New widget",
+    "image": null,
+    "description": null,
+    "sizeX": 8,
+    "sizeY": 5,
+    "config": {
+      "datasources": [
+        {
+          "type": "entity",
+          "name": null,
+          "entityAliasId": "804761e2-f0f5-ad90-7128-a8c8aec0230d",
+          "filterId": null,
+          "dataKeys": [
+            {
+              "name": "cpu_temp",
+              "type": "timeseries",
+              "label": "CPU",
+              "color": "#2196f3",
+              "settings": {},
+              "_hash": 0.21180881287637698,
+              "aggregationType": null,
+              "units": null,
+              "decimals": null,
+              "funcBody": null,
+              "usePostProcessing": null,
+              "postFuncBody": null
+            },
+            {
+              "name": "temperature",
+              "type": "timeseries",
+              "label": "Ambient",
+              "color": "#4a8b8e",
+              "settings": {},
+              "_hash": 0.04576760268637026,
+              "aggregationType": null,
+              "units": null,
+              "decimals": null,
+              "funcBody": null,
+              "usePostProcessing": null,
+              "postFuncBody": null
+            }
+          ],
+          "latestDataKeys": []
+        }
+      ],
+      "timewindow": {
+        "realtime": {
+          "timewindowMs": 60000
+        }
+      },
+      "showTitle": true,
+      "backgroundColor": "#e8e8e8",
+      "color": "rgba(0, 0, 0, 0.87)",
+      "padding": "8px",
+      "settings": {
+        "shadowSize": 4,
+        "fontColor": "#545454",
+        "fontSize": 10,
+        "xaxis": {
+          "showLabels": true,
+          "color": "#545454"
+        },
+        "yaxis": {
+          "showLabels": true,
+          "color": "#545454"
+        },
+        "grid": {
+          "color": "#545454",
+          "tickColor": "#DDDDDD",
+          "verticalLines": true,
+          "horizontalLines": true,
+          "outlineWidth": 1
+        },
+        "legend": {
+          "show": true,
+          "position": "nw",
+          "backgroundColor": "#f0f0f0",
+          "backgroundOpacity": 0.85,
+          "labelBoxBorderColor": "rgba(1, 1, 1, 0.45)"
+        },
+        "decimals": 1,
+        "stack": false,
+        "tooltipIndividual": false
+      },
+      "title": "CPU vs Ambient Temperature",
+      "dropShadow": true,
+      "enableFullscreen": true,
+      "titleStyle": {
+        "fontSize": "16px",
+        "fontWeight": 400
+      },
+      "useDashboardTimewindow": true,
+      "showTitleIcon": false,
+      "titleTooltip": "",
+      "widgetStyle": {},
+      "widgetCss": "",
+      "pageSize": 1024,
+      "units": "°C",
+      "noDataDisplayMessage": "",
+      "showLegend": true,
+      "legendConfig": {
+        "direction": "column",
+        "position": "bottom",
+        "sortDataKeys": false,
+        "showMin": false,
+        "showMax": false,
+        "showAvg": false,
+        "showTotal": false,
+        "showLatest": true
+      }
+    },
+    "row": 0,
+    "col": 0,
+    "id": "cc625747-2f8c-3f10-f88c-fd00d678a57a"
+  },
+  "aliasesInfo": {
+    "datasourceAliases": {
+      "0": {
+        "alias": "RPi 4B",
+        "filter": {
+          "type": "singleEntity",
+          "singleEntity": {
+            "entityType": "DEVICE",
+            "id": "0169acb0-a8f5-11ed-ac5f-85a9c8d4abd3"
+          },
+          "resolveMultiple": false
+        }
+      }
+    },
+    "targetDeviceAliases": {}
+  },
+  "filtersInfo": {
+    "datasourceFilters": {}
+  },
+  "originalSize": {
+    "sizeX": 10,
+    "sizeY": 7
+  },
+  "originalColumns": 24
+}
