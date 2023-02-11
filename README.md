@@ -5,6 +5,9 @@
 # About #
 
 - The repository contains the JSON files for each Widget, Rule Set, Profile and the necessary Python files to send and display data about the system to the Thingsboard dashboard.
+- The Dashboard is inteded to display statistics about the Raspberry Pi's environment as well as the System Resources.
+
+## Notes ##
  
   - The Rules, Profiles and Widgets have been exported as Importable JSON files.
 
