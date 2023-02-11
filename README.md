@@ -4,6 +4,7 @@
 
 # Contents #
 
+The repository contains the JSON files for each widget and the python files required to send data to the thingsboard dashboard.
 
 ## Calls.py ##
 
