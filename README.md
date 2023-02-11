@@ -5,9 +5,14 @@
 # About #
 
 - The repository contains the JSON files for each Widget, Rule Set, Profile and the necessary Python files to send and display data about the system to the Thingsboard dashboard.
-- The Dashboard is inteded to display statistics about the Raspberry Pi's environment as well as the System Resources.
+
+- This Dashboard is inteded to display statistics about the Raspberry Pi's environment as well as the System Resources.
 
 ## Notes ##
+
+  - A Device Profile Must be added to generate the token needed for responses to be sent to thingsboard.
+  
+  - The Device name used with the dashboard is ***RPi 4B*** 
  
   - The Rules, Profiles and Widgets have been exported as Importable JSON files.
 
