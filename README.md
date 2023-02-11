@@ -11,7 +11,7 @@
 ## Notes ##
 
   - A Device Profile Must be added to generate the token needed for responses to be sent to thingsboard.
-  
+
   - The Device name used with the dashboard is ***RPi 4B*** 
  
   - The Rules, Profiles and Widgets have been exported as Importable JSON files.
@@ -19,6 +19,8 @@
   - The ***Targets.py*** file needs to be modified to reflect the api url and token of the offsite dashboard in Thingsboard and is seperated to accomodate for multiple API's.
 
   - Some functions in ***Calls.py*** require a Raspberry Pi with a SenseHat installed.
+  
+# Files - Description
 
 ## Calls.py ##
 
