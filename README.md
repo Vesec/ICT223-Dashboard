@@ -4,6 +4,8 @@
 
 # About #
 
+- This Repository is a Work in Progress for a College Course and as such Subject to intermittent breaks in the code or sudden major changes in structure.
+
 - The repository contains the JSON files for each Widget, Rule Set, Profile and the necessary Python files to send and display data about the system to the Thingsboard dashboard.
 
 - This Dashboard is inteded to display statistics about the Raspberry Pi's environment as well as the System Resources.
