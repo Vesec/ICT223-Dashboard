@@ -22,7 +22,7 @@
 
   - Some functions in ***Calls.py*** require a Raspberry Pi with a SenseHat installed.
   
-# Files - Description
+# Files
 ```
 .
 ├── LICENSE
