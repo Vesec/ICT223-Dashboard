@@ -4,11 +4,11 @@
 
 # About #
 
-The repository contains the JSON files for each widget and the python files required to send data to the Thingsboard dashboard.
+- The repository contains the JSON files for each widget and the python files required to send and display data about the system to the Thingsboard dashboard.
 
-The targets.py file needs to be modified to reflect the api url and token of the offsite dashboard in Thingsboard.
+- The targets.py file needs to be modified to reflect the api url and token of the offsite dashboard in Thingsboard and is seperated to accomodate for multiple API's.
 
-The functions in Calls.py require a Raspberry Pi with a SenseHat installed.
+- ==The functions in Calls.py require a Raspberry Pi with a SenseHat installed.==
 
 ## Calls.py ##
 
