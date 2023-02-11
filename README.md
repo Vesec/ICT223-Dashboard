@@ -6,7 +6,7 @@
 
 - The repository contains the JSON files for each widget and the python files required to send and display data about the system to the Thingsboard dashboard. The Rules, Profiles and Widgets have been exported as Importable JSON files.
 
-- The targets.py file needs to be modified to reflect the api url and token of the offsite dashboard in Thingsboard and is seperated to accomodate for multiple API's.
+  - **The targets.py file needs to be modified to reflect the api url and token of the offsite dashboard in Thingsboard and is seperated to accomodate for multiple API's.**
 
   - **Some functions in Calls.py require a Raspberry Pi with a SenseHat installed.**
 
@@ -14,7 +14,7 @@
 
 Stores all of the functions to retrieve the data for JSON RPC resonses sent by data.py. 
 
-### Host Information: ##
+### Host Information: ###
 
 
 - get_cpu_temperature: Returns the CPU temperature as a string in Celsius.
@@ -22,7 +22,7 @@ Stores all of the functions to retrieve the data for JSON RPC resonses sent by d
 - get_ram_info: Returns a list of information about RAM usage.
 - get_disk_space: Returns a list of information about disk space usage.
 
-### SenHat Information: ##
+### SenHat Information: ###
 
 - get_ambient_temperature: Returns the temperature readings of the environment.
 - get_pressure: Returns the atmospheric pressure readings.
