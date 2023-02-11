@@ -21,6 +21,29 @@
   - Some functions in ***Calls.py*** require a Raspberry Pi with a SenseHat installed.
   
 # Files - Description
+```
+├── calls.py
+├── LICENSE
+├── main.py
+├── Modules
+│   ├── cpu_statistics.json
+│   ├── cpu_vs_ambient_temperature.json
+│   ├── device_orientation.json
+│   ├── disk_usage.json
+│   ├── humidity.json
+│   └── incactivity.json
+├── Profiles
+│   └── default.json
+├── README.md
+├── Rules
+│   └── root_rule_chain.json
+└── Scripts
+    ├── calls.py
+    ├── data.py
+    └── targets.py
+
+5 directories, 15 files
+```
 
 ## Calls.py ##
 
