@@ -22,16 +22,15 @@
   
 # Files - Description
 ```
-├── calls.py
+.
 ├── LICENSE
-├── main.py
 ├── Modules
+│   ├── ambient_temp.json
 │   ├── cpu_statistics.json
 │   ├── cpu_vs_ambient_temperature.json
 │   ├── device_orientation.json
 │   ├── disk_usage.json
-│   ├── humidity.json
-│   └── incactivity.json
+│   └── humidity.json
 ├── Profiles
 │   └── default.json
 ├── README.md
@@ -42,7 +41,8 @@
     ├── data.py
     └── targets.py
 
-5 directories, 15 files
+5 directories, 13 files
+
 ```
 
 ## Calls.py ##
