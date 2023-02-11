@@ -4,7 +4,7 @@
 
 # About #
 
-- This Repository is a Work in Progress for a College Course and as such Subject to intermittent breaks in the code or sudden major changes in structure or layout of the dashboard as new feature are added.
+- This Repository is a Work in Progress for a College Course and as such Subject to intermittent breaks in the code or sudden major changes in structure or layout of the dashboard as new features are added.
 
 - The repository contains the JSON files for each Widget, Rule Set, Profile and the necessary Python files to send and display data about the system to the Thingsboard dashboard.
 
