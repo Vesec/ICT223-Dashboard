@@ -1,13 +1,14 @@
 import requests
 import time
 import calls
+import targets
 
-url = "https://pctips.ca/api/v1/s47B3i4t0oNlwFl67D5u/telemetry"
+url = targets.thinsboard_api()
 headers = {'Content-Type': 'application/json'}
 
 while True:
     # Generate some data to send
-    data = {}
+    sensedata = {}
     data['temperature'] = calls.get_ambient_temperature()
     data['cpu_temp'] = calls.get_cpu_temperature()
     data['cpu_use'] = calls.get_cpu_use()
