@@ -8,9 +8,9 @@
  
   - The Rules, Profiles and Widgets have been exported as Importable JSON files.
 
-  - **The *Targets.py* file needs to be modified to reflect the api url and token of the offsite dashboard in Thingsboard and is seperated to accomodate for multiple API's.**
+  - The ***Targets.py*** file needs to be modified to reflect the api url and token of the offsite dashboard in Thingsboard and is seperated to accomodate for multiple API's.
 
-  - **Some functions in *Calls.py* require a Raspberry Pi with a SenseHat installed.**
+  - Some functions in ***Calls.py*** require a Raspberry Pi with a SenseHat installed.
 
 ## Calls.py ##
 
