@@ -22,6 +22,7 @@
 
 ## Calls.py ##
 
+
 Stores all of the functions to retrieve the data for JSON RPC resonses sent by data.py. 
 
 ### Host Information: ###
@@ -43,8 +44,10 @@ Stores all of the functions to retrieve the data for JSON RPC resonses sent by d
 
 ## Data.py ##
 
+
 Retrieves the values from a defined list of functions, the main modules used are SeneHat and os.
 
 ## Targets.py ##
+
 
 Stores the API Url's and Keys to be used by Data.py when sending JSON RPC Responses to the intended target destination.
