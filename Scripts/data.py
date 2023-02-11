@@ -3,7 +3,7 @@ import time
 import calls
 import targets
 
-url = targets.thinsboard_api()
+url = targets.thingsboard_api()
 headers = {'Content-Type': 'application/json'}
 
 while True:
