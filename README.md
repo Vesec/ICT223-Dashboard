@@ -58,7 +58,7 @@ Stores all of the functions to retrieve the data for JSON RPC resonses sent by d
 - get_ram_info: Returns a list of information about RAM usage.
 - get_disk_space: Returns a list of information about disk space usage.
 
-### SenHat Information: ###
+### SenseHat Information: ###
 
 - get_ambient_temperature: Returns the temperature readings of the environment.
 - get_pressure: Returns the atmospheric pressure readings.
