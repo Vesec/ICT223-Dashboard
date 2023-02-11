@@ -1,0 +1,159 @@
+{
+  "name": "default",
+  "description": "Default device profile",
+  "image": null,
+  "type": "DEFAULT",
+  "transportType": "DEFAULT",
+  "provisionType": "DISABLED",
+  "defaultRuleChainId": null,
+  "defaultDashboardId": null,
+  "defaultQueueName": null,
+  "profileData": {
+    "configuration": {
+      "type": "DEFAULT"
+    },
+    "transportConfiguration": {
+      "type": "DEFAULT"
+    },
+    "provisionConfiguration": {
+      "type": "DISABLED",
+      "provisionDeviceSecret": null
+    },
+    "alarms": [
+      {
+        "id": "f8f790b9-5847-7477-dd14-d8f936c72991",
+        "alarmType": "Disconnected",
+        "createRules": {
+          "CRITICAL": {
+            "condition": {
+              "condition": [
+                {
+                  "key": {
+                    "type": "ATTRIBUTE",
+                    "key": "active"
+                  },
+                  "valueType": "BOOLEAN",
+                  "value": null,
+                  "predicate": {
+                    "type": "BOOLEAN",
+                    "operation": "EQUAL",
+                    "value": {
+                      "defaultValue": false,
+                      "userValue": null,
+                      "dynamicValue": null
+                    }
+                  }
+                }
+              ],
+              "spec": {
+                "type": "SIMPLE"
+              }
+            },
+            "schedule": null,
+            "alarmDetails": null,
+            "dashboardId": {
+              "entityType": "DASHBOARD",
+              "id": "1d651b60-a8f6-11ed-ac5f-85a9c8d4abd3"
+            }
+          }
+        },
+        "clearRule": null,
+        "propagate": false,
+        "propagateToOwner": false,
+        "propagateToTenant": false,
+        "propagateRelationTypes": null
+      },
+      {
+        "id": "330fbe3c-344f-1fdc-108d-446e02824e2e",
+        "alarmType": "Timeout",
+        "createRules": {
+          "CRITICAL": {
+            "condition": {
+              "condition": [
+                {
+                  "key": {
+                    "type": "ATTRIBUTE",
+                    "key": "inactivityAlarmTime"
+                  },
+                  "valueType": "NUMERIC",
+                  "value": null,
+                  "predicate": {
+                    "type": "NUMERIC",
+                    "operation": "EQUAL",
+                    "value": {
+                      "defaultValue": 600,
+                      "userValue": null,
+                      "dynamicValue": null
+                    }
+                  }
+                }
+              ],
+              "spec": {
+                "type": "SIMPLE"
+              }
+            },
+            "schedule": null,
+            "alarmDetails": null,
+            "dashboardId": {
+              "entityType": "DASHBOARD",
+              "id": "1d651b60-a8f6-11ed-ac5f-85a9c8d4abd3"
+            }
+          }
+        },
+        "clearRule": null,
+        "propagate": false,
+        "propagateToOwner": false,
+        "propagateToTenant": true,
+        "propagateRelationTypes": null
+      },
+      {
+        "id": "884b22b4-45e0-96d0-54a2-532ad2fd4934",
+        "alarmType": "Connected",
+        "createRules": {
+          "WARNING": {
+            "condition": {
+              "condition": [
+                {
+                  "key": {
+                    "type": "ATTRIBUTE",
+                    "key": "active"
+                  },
+                  "valueType": "BOOLEAN",
+                  "value": null,
+                  "predicate": {
+                    "type": "BOOLEAN",
+                    "operation": "EQUAL",
+                    "value": {
+                      "defaultValue": true,
+                      "userValue": null,
+                      "dynamicValue": null
+                    }
+                  }
+                }
+              ],
+              "spec": {
+                "type": "SIMPLE"
+              }
+            },
+            "schedule": null,
+            "alarmDetails": null,
+            "dashboardId": {
+              "entityType": "DASHBOARD",
+              "id": "1d651b60-a8f6-11ed-ac5f-85a9c8d4abd3"
+            }
+          }
+        },
+        "clearRule": null,
+        "propagate": false,
+        "propagateToOwner": false,
+        "propagateToTenant": false,
+        "propagateRelationTypes": null
+      }
+    ]
+  },
+  "provisionDeviceKey": null,
+  "firmwareId": null,
+  "softwareId": null,
+  "externalId": null,
+  "default": false
+}
