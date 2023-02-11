@@ -8,7 +8,7 @@
 
 - The targets.py file needs to be modified to reflect the api url and token of the offsite dashboard in Thingsboard and is seperated to accomodate for multiple API's.
 
-- ==The functions in Calls.py require a Raspberry Pi with a SenseHat installed.==
+- **The functions in Calls.py require a Raspberry Pi with a SenseHat installed.**
 
 ## Calls.py ##
 
