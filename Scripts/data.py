@@ -8,7 +8,7 @@ headers = {'Content-Type': 'application/json'}
 
 while True:
     # Generate some data to send
-    sensedata = {}
+    data = {}
     data['temperature'] = calls.get_ambient_temperature()
     data['cpu_temp'] = calls.get_cpu_temperature()
     data['cpu_use'] = calls.get_cpu_use()
