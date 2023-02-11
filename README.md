@@ -14,7 +14,7 @@
 
 Stores all of the functions to retrieve the data for JSON RPC resonses sent by data.py. 
 
-# Host Information:
+### Host Information: ##
 
 
 - get_cpu_temperature: Returns the CPU temperature as a string in Celsius.
@@ -22,7 +22,7 @@ Stores all of the functions to retrieve the data for JSON RPC resonses sent by d
 - get_ram_info: Returns a list of information about RAM usage.
 - get_disk_space: Returns a list of information about disk space usage.
 
-# SenHat Information:
+### SenHat Information: ##
 
 - get_ambient_temperature: Returns the temperature readings of the environment.
 - get_pressure: Returns the atmospheric pressure readings.
