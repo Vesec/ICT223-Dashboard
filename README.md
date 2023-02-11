@@ -4,7 +4,9 @@
 
 # About #
 
-- The repository contains the JSON files for each widget, Rule Set, Profile and the necessary Python files to send and display data about the system to the Thingsboard dashboard. The Rules, Profiles and Widgets have been exported as Importable JSON files.
+- The repository contains the JSON files for each Widget, Rule Set, Profile and the necessary Python files to send and display data about the system to the Thingsboard dashboard.
+ 
+  - The Rules, Profiles and Widgets have been exported as Importable JSON files.
 
   - **The *Targets.py* file needs to be modified to reflect the api url and token of the offsite dashboard in Thingsboard and is seperated to accomodate for multiple API's.**
 
