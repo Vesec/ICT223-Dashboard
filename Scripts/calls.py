@@ -17,10 +17,38 @@ def get_ram_info():
         p.readline()
         return list(map(int, p.readline().split()[1:4]))
 
+def get_ram_max(num_samples=10):
+    # Return the maximum RAM usage over the last 10 samples
+    ram_samples = []
+    for i in range(num_samples):
+        ram_samples.append(get_ram_info()[1])
+    return max(ram_samples)
+
+def get_ram_avg(num_samples=10):
+    # Return the average RAM usage over the last 10 samples
+    ram_samples = []
+    for i in range(num_samples):
+        ram_samples.append(get_ram_info()[1])
+    return sum(ram_samples) / len(ram_samples)
+
 def get_cpu_use():
     #Return the percentage of CPU used by the user as a percent value.
     cpupercent=psutil.cpu_percent(4)
     return cpupercent
+
+def get_cpu_use_max(num_samples=10):
+    # Return the maximum CPU usage over the last 10 samples
+    cpu_samples = []
+    for i in range(num_samples):
+        cpu_samples.append(get_cpu_use())
+    return max(cpu_samples)
+
+def get_cpu_use_avg(num_samples=10):
+    # Return the average CPU usage over the last 10 samples
+    cpu_samples = []
+    for i in range(num_samples):
+        cpu_samples.append(get_cpu_use())
+    return sum(cpu_samples) / len(cpu_samples)
 
 def get_disk_space():
     #Return a list of information about disk space usage.
@@ -62,3 +90,16 @@ def get_orientation_degrees():
     #Returns the orientation readings in degrees for pitch, roll, and yaw.
     orientation_degrees = sense.get_orientation_degrees()
     return orientation_degrees['pitch'], orientation_degrees['roll'], orientation_degrees['yaw']
+
+def get_corrected_ambient_temperature():
+    # Get raw temperature values
+    ambient_temp = get_ambient_temperature()
+    cpu_temp = get_cpu_temperature()
+
+    # Ta = Tc - ((Tc - Td) * K)
+    # Ta = corrected ambient temperature, Tc = raw ambient temperature, Td = CPU temperature, K = correction factor
+    correction_factor = 1.8
+    corrected_ambient_temp = ambient_temp - ((cpu_temp - ambient_temp) * correction_factor)
+
+    return corrected_ambient_temp
+

@@ -1,0 +1,41 @@
+{
+  "name": "MQTT-Devices",
+  "description": "",
+  "image": null,
+  "type": "DEFAULT",
+  "transportType": "MQTT",
+  "provisionType": "DISABLED",
+  "defaultRuleChainId": {
+    "entityType": "RULE_CHAIN",
+    "id": "a5306940-bf22-11ed-a2c8-4fe89351628d"
+  },
+  "defaultDashboardId": {
+    "entityType": "DASHBOARD",
+    "id": "dad583e0-bf23-11ed-a2c8-4fe89351628d"
+  },
+  "defaultQueueName": "HighPriority",
+  "profileData": {
+    "configuration": {
+      "type": "DEFAULT"
+    },
+    "transportConfiguration": {
+      "type": "MQTT",
+      "deviceTelemetryTopic": "v1/devices/me/telemetry",
+      "deviceAttributesTopic": "v1/devices/me/attributes",
+      "transportPayloadTypeConfiguration": {
+        "transportPayloadType": "JSON"
+      },
+      "sendAckOnValidationException": true
+    },
+    "provisionConfiguration": {
+      "type": "DISABLED",
+      "provisionDeviceSecret": null
+    },
+    "alarms": []
+  },
+  "provisionDeviceKey": null,
+  "firmwareId": null,
+  "softwareId": null,
+  "externalId": null,
+  "default": false
+}

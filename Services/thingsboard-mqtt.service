@@ -1,0 +1,14 @@
+[Unit]
+Description=Thingsboard Telemetry Script
+After=network-online.target
+
+[Service]
+User=rdpuser
+Group=rdpuser
+ExecStartPre=sleep 25
+WorkingDirectory=/home/rdpuser/sensehat/dashboard
+ExecStart=/usr/bin/python /home/rdpuser/sensehat/dashboard/Scripts/mqtt-data.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
